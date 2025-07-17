@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center mt-20">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display grid place-content-center">
+          <div class="stat shadow">
+            <div class="stat text-center">
+              <div class="stat-value">$45000</div>
+              <div class="stat-desk">Available Balance</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="">
+            <button class="btn btn-lg">Add Money</button>
+            <button class="btn btn-lg">Cash Out</button>
+          </div>
+          <div class="divider"></div>
+          <!-- add money section -->
+          <div class="card-body shadow">
+            <fieldset class="fieldset">
+              <label class="label">Amount</label>
+              <input
+                id="phone-number"
+                type="text"
+                class="input"
+                placeholder="Add Amount"
+                autocomplete="off"
+                required
+              />
+              <label class="label">Pin</label>
+              <input
+                id="pin-number"
+                type="password"
+                class="input"
+                placeholder="Enter 4 Digit Pin"
+              />
+
+              <button id="Button-login" class="btn btn-neutral mt-4">
+                Add Money
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/home.js"></script>
+  </body>
+</html>
