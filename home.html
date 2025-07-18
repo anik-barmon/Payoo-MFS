@@ -14,7 +14,7 @@
   </head>
   <body>
     <main class="flex justify-center mt-20">
-      <div class="mockup-phone bg-white">
+      <div class="mockup-phone bg-slate-200">
         <div class="mockup-phone-camera"></div>
         <div class="mockup-phone-display grid place-content-center">
           <div class="stat shadow">
@@ -25,12 +25,12 @@
           </div>
           <div class="divider"></div>
           <div class="">
-            <button id="" class="btn btn-lg">Add Money</button>
-            <button class="btn btn-lg">Cash Out</button>
+            <button id="show-add-money" class="btn btn-lg">Add Money</button>
+            <button id="show-cash-out" class="btn btn-lg">Cash Out</button>
           </div>
           <div class="divider"></div>
           <!-- add money section -->
-          <div class="card-body shadow">
+          <div id="add-money-form" class="card-body shadow">
             <fieldset class="fieldset">
               <label class="label">Amount</label>
               <input
@@ -54,9 +54,36 @@
               </button>
             </fieldset>
           </div>
+          <!-- cash out money section -->
+          <div id="cash-out-form" class="hidden card-body shadow">
+            <fieldset class="fieldset">
+              <label class="label">Amount</label>
+              <input
+                id="input-cash-out-money"
+                type="text"
+                class="input"
+                placeholder="Cash Out Amount"
+                autocomplete="off"
+                required
+              />
+              <label class="label">Pin</label>
+              <input
+                id="input-cash-out-pin-number"
+                type="password"
+                class="input"
+                placeholder="Enter 4 Digit Pin"
+              />
+
+              <button id="btn-cash-out-money" class="btn btn-neutral mt-4">
+                Cash Out
+              </button>
+            </fieldset>
+          </div>
         </div>
       </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
